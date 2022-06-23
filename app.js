@@ -1,36 +1,14 @@
-// Only used this to learn some basic node.js stuff
-    // const profileDataArgs = process.argv.slice(2, process.argv.length);
-    
-    // console.log(profileDataArgs);
-    
-    // const printProfileData = profileDataArr => {
-    
-    //     for(let i = 0; i < profileDataArr.length; i++){
-    //         console.log(profileDataArr[i]);
-    //     }
-    
-    
-    //     console.log("================");
-    
-    //     profileDataArr.forEach((profileItem) => {
-    //         console.log(profileItem);
-    //     });
-    // };
-    
-    // printProfileData(profileDataArgs);
+const inquirer = require('inquirer');
+// const fs = require('fs');
+// const generatePage = require("./src/page-template.js");
+
+// const pageHTML = generatePage(yourName, github);
 
 
-const fs = require('fs');
-const generatePage = require("./src/page-template.js");
+// fs.writeFile("./index.html", pageHTML, err => {
+//     if(err) throw err;
 
-const profileDataArgs = process.argv.slice(2);
+//     console.log("Portfolio complete! Checkout out index.html to see the output!");
+// });
 
-const [yourName, github] = profileDataArgs;
-
-
-
-fs.writeFile("./index.html", generatePage(yourName, github), err => {
-    if(err) throw err;
-
-    console.log("Portfolio complete! Checkout out index.html to see the output!");
-});
+console.log(inquirer);

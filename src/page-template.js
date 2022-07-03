@@ -84,7 +84,7 @@ const generateProjects = projectsArr => {
                         return `
                             <div class='col-12 col-md-6 mb-2 bg-dark text-light p-3 flex-column'>
                                 <h3 class='portfolio-item-title text-light'>${name}</h3>
-                                <h5 class='portfolio-language'>
+                                <h5 class='portfolio-languages'>
                                     Built With:
                                     ${languages.join(', ')}
                                 </h5>

@@ -149,6 +149,6 @@ promptUser()
     .then(copyFileResponse => {
         console.log(copyFileResponse);
     })
-    .catch(err => {
+    .catch(err => {   
         console.log(err);
     });
